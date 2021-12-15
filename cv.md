@@ -26,7 +26,7 @@ Hello everyone. I have been interested in software development for more than 10 
 
 ## Code example
 
-```
+```javascript
 function memoizedFibonacci (n, memo = {}) {
   if(memo[n]) {
     return memo[n]
