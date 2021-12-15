@@ -11,13 +11,15 @@
 
 ## About me
 
+Hello everyone. I have been interested in software development for more than 10 years. During this time, he managed to work in several companies. I have been developing software for the banking sector for the last three years. I really like to develop programs. My key programming language is JavaScript. I really like the concept of a functional and declarative approach to writing programs. To implement it, I use the React framework.
+
 --- 
 
 ## Skills
 
 * HTML, CSS
 * Git, Bush, 
-* JavaScript, TypeScript
+* JavaScript, TypeScript, NodeJS
 * React, Redux, NextJS
 
 ---
@@ -41,6 +43,10 @@ function memoizedFibonacci (n, memo = {}) {
 ---
 
 ## My learning
+
+|Institution            |Faculty                          |Specialty                            |Graduation year  |
+|-----------------------|---------------------------------|-------------------------------------|-----------------|
+|Ural Federal University|Mathematics and Computer Science |Information Technology in Economics  |2014             |
 
 --- 
 
