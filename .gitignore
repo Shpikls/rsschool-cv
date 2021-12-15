@@ -1,0 +1,6 @@
+# IDE seeting files
+.idea
+.vscode
+
+# NPM library folder
+node_modules
