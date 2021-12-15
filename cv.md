@@ -45,7 +45,7 @@ function memoizedFibonacci (n, memo = {}) {
 ## My learning
 
 |Institution            |Faculty                          |Specialty                            |Graduation year  |
-|-----------------------|---------------------------------|-------------------------------------|-----------------|
+|:----------------------|:--------------------------------|:------------------------------------|:----------------|
 |Ural Federal University|Mathematics and Computer Science |Information Technology in Economics  |2014             |
 
 --- 
