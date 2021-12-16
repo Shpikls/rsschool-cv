@@ -1,13 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aleksei Petsevich CV</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Aleksei Petsevich CV</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css"
+		/>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Aleksei Petsevich</h1>
+			<p>software developer</p>
+		</header>
+		<main>
+			<section>
+				<h2>Contact information</h2>
+				<ul class="contact__list">
+					<li class="contact__phone">7 (912) 912-10-24</li>
+					<li class="contact__email"><a href="mailto:shpikls@shpikls.ru">shpikls@shpikls.ru</a></li>
+					<li class="contact__tg">@shpikls</li>
+					<li class="contact__discord">Shpikls#7971</li>
+					<li class="contact__github"><a href="https://github.com/Shpikls">@shpikls</a></li>
+				</ul>
+			</section>
+			<section>
+				<h2>About me</h2>
+			</section>
+			<section>
+				<h2>Skills</h2>
+			</section>
+			<section>
+				<h2>Code example</h2>
+<pre><code class="language-javascript">function memoizedFibonacci (n, memo = {}) { <br>
+	if(memo[n]) { <br>
+		return memo[n] <br>
+	} <br>
+	<br>
+	if (n == 0 || n == 1) { <br>
+		return n <br>
+	} <br>
+	<br>
+	return memo[n] = fibonacci(n - 1, memo) + fibonacci(n - 2, memo) <br>
+}
+</code></pre>
+			</section>
+			<section>
+				<h2>My learning</h2>
+			</section>
+			<section>
+				<h2>My language</h2>
+				<ul>
+					<li>Russian - Native</li>
+					<li>English - B1</li>
+				</ul>
+			</section>
+		</main>
+		<footer></footer>
+		<script>
+			hljs.highlightAll();
+		</script>
+	</body>
 </html>

@@ -1,3 +1,46 @@
 body {
-  background-color: cornflowerblue;
+  background-color: white;
+}
+
+code {
+  tab-size: 2;
+}
+
+.contact__list > * {
+  position: relative;
+}
+
+.contact__list > *::before {
+  color: black;
+  left: -20px;
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  bottom: 0;
+}
+
+.contact__phone::before {
+  content: url("./assets/phone-square-solid.svg");
+}
+
+.contact__email::before {
+  content: url("./assets/envelope-regular.svg");
+}
+
+.contact__tg::before {
+  content: url("./assets/telegram-brands.svg");
+}
+
+.contact__discord::before {
+  content: url("./assets/discord-brands.svg");
+}
+
+.contact__github::before {
+  content: url("./assets/github-brands.svg");
+}
+
+.contact__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 0 20px;
 }

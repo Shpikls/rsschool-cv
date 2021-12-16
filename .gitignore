@@ -4,3 +4,6 @@
 
 # NPM library folder
 node_modules
+
+# Finder
+.DS_Store
