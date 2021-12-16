@@ -3,6 +3,11 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+body > * {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 code {
   tab-size: 2;
 }
