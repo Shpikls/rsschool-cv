@@ -24,9 +24,20 @@
 			<h1 class="header__title">Aleksei Petsevich</h1>
 			<p class="header__job-function">software developer</p>
 			<img class="header__photo" src="./assets/my_photo.jpg" alt="Aleksei Petsevich photo">
+			<nav>
+				<ul>
+					<li><a href="#contact">Contact information</a></li>
+					<li><a href="#about">About me</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#code">Code example</a></li>
+					<li><a href="#learning">My learning</a></li>
+					<li><a href="#projects">My projects</a></li>
+					<li><a href="#languege">My language</a></li>
+				</ul>
+			</nav>
 		</header>
 		<main>
-			<section>
+			<section id="contact">
 				<h2>Contact information</h2>
 				<ul class="contact__list">
 					<li class="contact__phone">7 (912) 912-10-24</li>
@@ -36,11 +47,11 @@
 					<li class="contact__github"><a href="https://github.com/Shpikls">@shpikls</a></li>
 				</ul>
 			</section>
-			<section>
+			<section id="about">
 				<h2>About me</h2>
 				<p>Hello everyone. I have been interested in software development for more than 10 years. During this time, he managed to work in several companies. I have been developing software for the banking sector for the last three years. I really like to develop programs. My key programming language is JavaScript. I really like the concept of a functional and declarative approach to writing programs. To implement it, I use the React framework.</p>
 			</section>
-			<section>
+			<section id="skills">
 				<h2>Skills</h2>
 				<ul>
 					<li>HTML, CSS</li>
@@ -49,7 +60,7 @@
 					<li>React, Redux, NextJS</li>
 				</ul>
 			</section>
-			<section>
+			<section id="code">
 				<h2>Code example</h2>
 <pre><code class="language-javascript">function memoizedFibonacci (n, memo = {}) { <br>
 	if(memo[n]) { <br>
@@ -64,7 +75,7 @@
 }
 </code></pre>
 			</section>
-			<section>
+			<section id="learning">
 				<h2>My learning</h2>
 				<table>
 						<tr>
@@ -141,10 +152,26 @@
 						</tr>
 				</table>
 			</section>
-			<section>
+			<section id="projects">
 				<h2>My projects</h2>
+				<div class="card__container">
+					<article class="card">
+						<h3>Movie base</h3>
+						<img src="./assets/react-gmp.png" alt="Movie base screenshot">
+						<p>This project was developed as part of the "React Global Mentoring Program" course. This project is a database of films</p>
+						<p><b>Technologies:</b> React, Redux, NextJS, Styled&nbsp;components</p>
+						<a href="https://github.com/Shpikls/ReactGMP.NextJS"><img class="icon__small" src="./assets/github-brands.svg" alt="GitHub icon" />View code</a>
+					</article>
+					<article class="card">
+						<h3>Markdown CV</h3>
+						<img src="./assets/mkdown-cv.png" alt="My CV screenshot">
+						<p>In this project I tried to make my CV in the markdown markup language</p>
+						<p><b>Technologies:</b>Markdown, Git, GitHub</p>
+						<a href="https://github.com/Shpikls/rsschool-cv/blob/gh-pages/cv.md"><img class="icon__small" src="./assets/github-brands.svg" alt="GitHub icon" />View code</a>
+					</article>
+				</div>
 			</section>
-			<section>
+			<section id="languege">
 				<h2>My language</h2>
 				<ul>
 					<li>Russian - Native</li>
@@ -152,9 +179,11 @@
 				</ul>
 			</section>
 		</main>
-		<footer></footer>
-		<script>
-			hljs.highlightAll();
-		</script>
+		<footer>
+			<a href="https://github.com/Shpikls" class="footer__github"><img src="./assets/github-brands.svg" /></a>
+			<div>2021</div>
+			<a href="https://rs.school/js/"><img src="./assets/rs_school_js.svg" alt="RS school link"></a>
+		</footer>
+		<script src="./main.js"></script>
 	</body>
 </html>
