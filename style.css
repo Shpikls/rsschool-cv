@@ -18,16 +18,42 @@ section {
   padding: 8px;
 } 
 
-body > * {
-  max-width: 800px;
+body {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr 1fr;
+  grid-template-areas: 
+    "nav  nav   nav"
+    "sb   main  main"
+    "ft   ft    ft";
+  max-width: 900px;
   margin: 0 auto;
+}
+
+nav {
+  background-color: #e7e7e7;
+  grid-area: nav;
+}
+
+aside {
+  grid-area: sb;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: ft;
 }
 
 code {
   tab-size: 2;
 }
+
 .header__title {
   margin-bottom: 0;
+  font-size: 26px;
+  margin-top: 16px;
 }
 
 .header__photo {
@@ -166,13 +192,13 @@ section h2 {
   overflow: hidden;
   border: 1px solid black;
   position: fixed;
-  bottom: 8px;
-  right: calc(50% - 466px);
+  bottom: 2px;
+  right: calc(50% - 502px);
   opacity: .5;
   transition: opacity .1s linear;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 1015px) {
   .arrow-up {
     right: 8px;
   }
@@ -195,10 +221,6 @@ section h2 {
   position: relative;
   top: -2px;
   width: 70%;
-}
-
-nav {
-  background-color: #e7e7e7;
 }
 
 nav ul {
@@ -225,7 +247,11 @@ nav a {
 }
 
 nav li a:hover {
-  color: red;
+  color: #f34e4e;
   text-decoration: underline;
   background-color: #c4c4c4;
+}
+
+ul {
+  padding-inline-start: 20px;
 }
