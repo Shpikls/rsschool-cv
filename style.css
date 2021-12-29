@@ -1,0 +1,262 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header, 
+footer, 
+section {
+  padding: 8px;
+} 
+
+body {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr 1fr;
+  grid-template-areas:
+    "h1   h1    h1" 
+    "nav  nav   nav"
+    "sb   main  main"
+    "ft   ft    ft";
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  grid-area: h1;
+}
+
+nav {
+  background-color: #e7e7e7;
+  grid-area: nav;
+}
+
+aside {
+  grid-area: sb;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: ft;
+}
+
+code {
+  tab-size: 2;
+}
+
+.header__title {
+  margin-bottom: 0;
+  font-size: 26px;
+  margin-top: 16px;
+}
+
+.header__photo {
+  width: 200px;
+}
+
+.header__job-function {
+  padding: 0;
+  margin: 0 0 16px 0;
+  font-size: 24px;
+}
+
+.contact__list > * {
+  position: relative;
+}
+
+.contact__list > *::before {
+  color: black;
+  left: -20px;
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  bottom: 0;
+}
+
+.contact__phone::before {
+  content: url("./assets/phone-square-solid.svg");
+}
+
+.contact__email::before {
+  content: url("./assets/envelope-regular.svg");
+}
+
+.contact__tg::before {
+  content: url("./assets/telegram-brands.svg");
+}
+
+.contact__discord::before {
+  content: url("./assets/discord-brands.svg");
+}
+
+.contact__github::before {
+  content: url("./assets/github-brands.svg");
+}
+
+.contact__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 0 20px;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid black;
+  padding: 4px 8px;
+  text-align: left;
+}
+
+.card {
+  width: 100%;
+}
+
+.card + .card {
+  margin-left: 16px;
+}
+
+.card > img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: 0 0;
+  display: block;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.card .card__open {
+  height: auto;
+}
+
+.card__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card a {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.icon__small {
+  width: 16px;
+  margin-right: 4px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background-color: #ebebeb;
+}
+
+footer a {
+  height: 100%;
+}
+
+footer img {
+  height: 100%;
+}
+
+.footer__github {
+  display: flex;
+  align-items: center;
+}
+
+section h2 {
+  text-transform: uppercase;
+}
+
+.arrow-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+  overflow: hidden;
+  border: 1px solid black;
+  position: fixed;
+  bottom: 2px;
+  right: calc(50% - 502px);
+  opacity: .5;
+  transition: opacity .1s linear;
+}
+
+@media (max-width: 1015px) {
+  .arrow-up {
+    right: 8px;
+  }
+}
+
+.arrow-up:focus {
+  outline: 1px dotted black;
+  opacity: 1;
+}
+
+.arrow-up:hover {
+  opacity: 1;
+}
+
+.arrow-up.hide {
+  opacity: 0;
+}
+
+.arrow-up img {
+  position: relative;
+  top: -2px;
+  width: 70%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: block;
+}
+
+nav a {
+  text-decoration: none;
+  transition: all .2s ease;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding: 16px 8px;
+  color: #256dbe;
+  text-transform: uppercase;
+}
+
+nav li a:hover {
+  color: #f34e4e;
+  text-decoration: underline;
+  background-color: #c4c4c4;
+}
+
+ul {
+  padding-inline-start: 20px;
+}
