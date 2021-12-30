@@ -30,6 +30,18 @@ h1::before, h2::before {
   margin-right: .5rem;
 }
 
+a {
+  color: #87baf5;
+  text-decoration: none;
+  -webkit-transition: color .2s ease;
+  transition: color .2s ease;
+}
+
+a:hover {
+  color: #ec8888;
+  text-decoration: underline;
+}
+
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,9 +56,6 @@ nav li {
 }
 
 nav a {
-  text-decoration: none;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
   height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,13 +64,7 @@ nav a {
       -ms-flex-align: center;
           align-items: center;
   padding: 16px 16px 16px 0;
-  color: #87baf5;
   text-transform: uppercase;
-}
-
-nav a:hover {
-  color: #ec8888;
-  text-decoration: underline;
 }
 
 code {
