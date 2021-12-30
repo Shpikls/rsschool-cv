@@ -67,26 +67,32 @@ nav a {
   text-transform: uppercase;
 }
 
+.general-section .photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: block;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 -10px;
+     object-position: 0 -10px;
+}
+
+.first-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.first-line > * {
+  margin-right: 2rem;
+}
+
 code {
   -moz-tab-size: 2;
     -o-tab-size: 2;
        tab-size: 2;
-}
-
-.header__title {
-  margin-bottom: 0;
-  font-size: 26px;
-  margin-top: 16px;
-}
-
-.header__photo {
-  width: 200px;
-}
-
-.header__job-function {
-  padding: 0;
-  margin: 0 0 16px 0;
-  font-size: 24px;
 }
 
 .contact__list > * {
