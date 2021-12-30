@@ -1,5 +1,8 @@
-body {
+html {
   scroll-behavior: smooth;
+}
+
+body {
   font-family: 'Roboto', sans-serif;
   position: relative;
   margin: 0;
