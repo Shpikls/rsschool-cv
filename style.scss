@@ -63,24 +63,28 @@ nav {
   }
 }
 
+.general-section {
+  .photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: 0 -10px;
+  }
+}
+
+.first-line {
+  display: flex;
+  
+  & > * {
+    margin-right: 2rem;
+  }
+}
+
 code {
   tab-size: 2;
-}
-
-.header__title {
-  margin-bottom: 0;
-  font-size: 26px;
-  margin-top: 16px;
-}
-
-.header__photo {
-  width: 200px;
-}
-
-.header__job-function {
-  padding: 0;
-  margin: 0 0 16px 0;
-  font-size: 24px;
 }
 
 .contact__list > * {
