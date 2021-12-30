@@ -15,39 +15,6 @@ header,
 footer, 
 section {
   padding: 8px;
-} 
-
-body {
-  display: grid;
-  grid-template-columns: 0.7fr 1fr 1fr;
-  grid-template-areas:
-    "h1   h1    h1" 
-    "nav  nav   nav"
-    "sb   main  main"
-    "ft   ft    ft";
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-h1 {
-  grid-area: h1;
-}
-
-nav {
-  background-color: #e7e7e7;
-  grid-area: nav;
-}
-
-aside {
-  grid-area: sb;
-}
-
-main {
-  grid-area: main;
-}
-
-footer {
-  grid-area: ft;
 }
 
 code {
