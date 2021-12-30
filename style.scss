@@ -31,6 +31,35 @@ h1, h2 {
   }
 }
 
+nav {
+  ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    display: block;
+  }
+
+  a {
+    text-decoration: none;
+    transition: all .2s ease;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 16px 16px 16px 0;
+    color: #87baf5;
+    text-transform: uppercase;
+
+    &:hover {
+      color: #ec8888;
+      text-decoration: underline;
+    }
+  }
+}
+
 code {
   tab-size: 2;
 }
@@ -209,35 +238,6 @@ section h2 {
   position: relative;
   top: -2px;
   width: 70%;
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav li {
-  display: block;
-}
-
-nav a {
-  text-decoration: none;
-  transition: all .2s ease;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  padding: 16px 8px;
-  color: #256dbe;
-  text-transform: uppercase;
-}
-
-nav li a:hover {
-  color: #f34e4e;
-  text-decoration: underline;
-  background-color: #c4c4c4;
 }
 
 ul {
