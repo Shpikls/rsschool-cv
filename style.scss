@@ -16,10 +16,16 @@ body {
   margin: 0 auto;
 }
 
-header, 
-footer, 
-section {
-  padding: 8px;
+h1 {
+  text-transform: uppercase;
+  font-size: 32px;
+}
+
+h1, h2 {
+  &::before {
+    content: '#';
+    margin-right: .5rem;
+  }
 }
 
 code {
