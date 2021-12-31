@@ -7,3 +7,6 @@ node_modules
 
 # Finder
 .DS_Store
+
+# map files
+*.map
