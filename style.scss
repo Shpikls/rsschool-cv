@@ -83,6 +83,14 @@ nav {
   }
 }
 
+.icon {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 3px;
+  color: #ffffff;
+}
+
 code {
   tab-size: 2;
 }
@@ -92,7 +100,7 @@ code {
 }
 
 .contact__list > *::before {
-  color: black;
+  color: white;
   left: -20px;
   position: absolute;
   height: 16px;
@@ -100,30 +108,10 @@ code {
   bottom: 0;
 }
 
-.contact__phone::before {
-  content: url("./assets/phone-square-solid.svg");
-}
-
-.contact__email::before {
-  content: url("./assets/envelope-regular.svg");
-}
-
-.contact__tg::before {
-  content: url("./assets/telegram-brands.svg");
-}
-
-.contact__discord::before {
-  content: url("./assets/discord-brands.svg");
-}
-
-.contact__github::before {
-  content: url("./assets/github-brands.svg");
-}
-
 .contact__list {
   list-style-type: none;
   padding: 0;
-  margin: 0 0 0 20px;
+  margin: 0;
 }
 
 table {
