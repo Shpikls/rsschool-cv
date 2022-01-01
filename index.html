@@ -101,7 +101,7 @@
 		return n
 	}
 	
-	return memo[n] = fibonacci(n - 1, memo) + fibonacci(n - 2, memo)
+	return memo[n] = memoizedFibonacci(n - 1, memo) + memoizedFibonacci(n - 2, memo)
 }
 </code></pre>
 				</div>
