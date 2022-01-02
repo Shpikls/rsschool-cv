@@ -1,3 +1,8 @@
+:root {
+  --main-color: #e6e6e6;
+  --second-color: #181818;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -6,8 +11,8 @@ body {
   font-family: 'Roboto', sans-serif;
   position: relative;
   margin: 0;
-  background-color: #181818;
-  color: #e6e6e6;
+  background-color: var(--second-color);
+  color: var(--main-color);
 
   * {
     box-sizing: border-box;
