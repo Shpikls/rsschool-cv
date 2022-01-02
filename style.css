@@ -234,54 +234,6 @@ section h2 {
   text-transform: uppercase;
 }
 
-.arrow-up {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 50%;
-  height: 48px;
-  width: 48px;
-  overflow: hidden;
-  border: 1px solid black;
-  position: fixed;
-  bottom: 2px;
-  right: calc(50% - 502px);
-  opacity: .5;
-  -webkit-transition: opacity .1s linear;
-  transition: opacity .1s linear;
-}
-
-@media (max-width: 1015px) {
-  .arrow-up {
-    right: 8px;
-  }
-}
-
-.arrow-up:focus {
-  outline: 1px dotted black;
-  opacity: 1;
-}
-
-.arrow-up:hover {
-  opacity: 1;
-}
-
-.arrow-up.hide {
-  opacity: 0;
-}
-
-.arrow-up img {
-  position: relative;
-  top: -2px;
-  width: 70%;
-}
-
 ul {
   -webkit-padding-start: 20px;
           padding-inline-start: 20px;
