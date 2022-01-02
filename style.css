@@ -1,0 +1,265 @@
+:root {
+  --main-color: #e6e6e6;
+  --second-color: #181818;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  margin: 0;
+  background-color: var(--second-color);
+  color: var(--main-color);
+  min-width: 1440px;
+}
+
+body * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 32px;
+}
+
+h1::before, h2::before {
+  content: '#';
+  margin-right: .5rem;
+}
+
+a {
+  color: #87baf5;
+  text-decoration: none;
+  -webkit-transition: color .2s ease;
+  transition: color .2s ease;
+}
+
+a:hover {
+  color: #ec8888;
+  text-decoration: underline;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: block;
+}
+
+nav a {
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px 16px 16px 0;
+  text-transform: uppercase;
+}
+
+.general-section .photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: block;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 -10px;
+     object-position: 0 -10px;
+}
+
+.first-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.first-line > * {
+  margin-right: 2rem;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 3px;
+  color: #ffffff;
+}
+
+code {
+  -moz-tab-size: 2;
+    -o-tab-size: 2;
+       tab-size: 2;
+}
+
+header,
+footer {
+  background-color: #222222;
+  padding: 32px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main > * {
+  padding: 32px 0;
+}
+
+main > *:nth-child(even) {
+  background-color: #222222;
+}
+
+.contact__list > * {
+  position: relative;
+}
+
+.contact__list > *::before {
+  color: white;
+  left: -20px;
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  bottom: 0;
+}
+
+.contact__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  color: var(--main-color);
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid var(--main-color);
+  padding: 8px 16px;
+  text-align: left;
+}
+
+th {
+  background-color: #313131;
+}
+
+.card {
+  width: 100%;
+}
+
+.card + .card {
+  margin-left: 64px;
+}
+
+.card > img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 0;
+     object-position: 0 0;
+  display: block;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.card .card__open {
+  height: auto;
+}
+
+.card__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icon__small {
+  width: 16px;
+  margin-right: 4px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+footer {
+  height: 114px;
+}
+
+footer > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer a {
+  height: 100%;
+}
+
+footer img {
+  height: 100%;
+}
+
+.footer__github {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section h2 {
+  text-transform: uppercase;
+}
+
+ul {
+  -webkit-padding-start: 20px;
+          padding-inline-start: 20px;
+}
+
+h1 {
+  margin-top: 0;
+}
+/*# sourceMappingURL=style.css.map */
