@@ -100,6 +100,8 @@ code {
   tab-size: 2;
 }
 
+
+
 .contact__list > * {
   position: relative;
 }
@@ -120,14 +122,19 @@ code {
 }
 
 table {
-  border: 1px solid black;
   border-collapse: collapse;
+  color: var(--main-color);
+  width: 100%;
 }
 
 td, th {
-  border: 1px solid black;
-  padding: 4px 8px;
+  border: 1px solid var(--main-color);
+  padding: 8px 16px;
   text-align: left;
+}
+
+th {
+  background-color: #313131;
 }
 
 .card {
