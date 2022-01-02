@@ -108,6 +108,14 @@ code {
        tab-size: 2;
 }
 
+main > * {
+  padding: 32px 0;
+}
+
+main > *:nth-child(even) {
+  background-color: #222222;
+}
+
 .contact__list > * {
   position: relative;
 }
@@ -148,7 +156,7 @@ th {
 }
 
 .card + .card {
-  margin-left: 16px;
+  margin-left: 64px;
 }
 
 .card > img {
